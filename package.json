@@ -1,0 +1,20 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "# Setup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
+    "start": "node server.js",
+    "postinstall": "cd client && yarn install  && yarn build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
+    "nodemon": "^2.0.4"
+  }
+}
